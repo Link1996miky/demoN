@@ -1,0 +1,35 @@
+# 应用名称
+spring:
+  application:
+    name: MyProject
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/articledb
+
+
+#  datasource:
+##    url: jdbc:mysql://127.0.0.1:3306/article1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+##    username: root
+##    password: 123456
+##    driver-class-name: com.mysql.cj.jdbc.Driver
+#    primary:
+#      jdbc-url: jdbc:mysql://127.0.0.1:3306/article1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#    secondary:
+#      jdbc-url: jdbc:mysql://127.0.0.1:3306/article2?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+# 应用服务 WEB 访问端口
+server:
+  port: 80
+
+
+
