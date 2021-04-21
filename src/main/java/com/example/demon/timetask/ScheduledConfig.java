@@ -1,4 +1,4 @@
-package com.example.demon.config;
+package com.example.demon.timetask;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ public class ScheduledConfig implements SchedulingConfigurer {
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
-        scheduledTaskRegistrar.setScheduler(scheduledTaskExecutor());
+//        scheduledTaskRegistrar.setScheduler(scheduledTaskExecutor());
     }
 
     @Bean
