@@ -4,7 +4,6 @@ package com.example.demon.service;
 import com.example.demon.Mapper.ArticleDAO;
 import com.example.demon.model.Article;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -17,7 +16,6 @@ public class ArticleServiceImpl implements ArticleService {
 
 
     @Override
-    @Transactional
     public void savaArticle(Article article) {
         articleDAO.save(article);
     }
